@@ -1,0 +1,15 @@
+int main()
+{
+	int value = 5, result, size = 10; // Specify array size and the value you are searching for.
+	int *search = new int[size];      // Create a Dynamic array.
+	for (int i = 0; i < size; i++)    // Fill up your array, off course you may already had a filled array.
+		cin >> search[i];
+
+	sort(search, size);               // You have to sort the array first of all.
+	result = binarysearch(search, size, value); // Get the index back from the function.
+
+	if (result >= 0 || result <= 0)
+		cout << "The index : " << result + 1 << endl;
+	else
+		cout << "The number isn't found ! " << endl;
+}
