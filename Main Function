@@ -5,7 +5,6 @@ int main()
 	for (int i = 0; i < size; i++)    // Fill up your array, off course you may already had a filled array.
 		cin >> search[i];
 
-	sort(search, size);               // You have to sort the array first of all.
 	result = binarysearch(search, size, value); // Get the index back from the function.
 
 	if (result >= 0 || result <= 0)
